@@ -1,0 +1,68 @@
+[
+    {
+        "SGX_SDK_VER": "2.26",
+        "BUILD_VER": "100.0",
+        "OS_CODE_NAME": "noble",
+        "OS_VER": "24.04"
+    },
+    {
+        "SGX_SDK_VER": "2.26",
+        "BUILD_VER": "100.0",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.25",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "noble",
+        "OS_VER": "24.04"
+    },
+    {
+        "SGX_SDK_VER": "2.25",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.24",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.23",
+        "BUILD_VER": "100.2",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.22",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.21",
+        "BUILD_VER": "100.1",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.20",
+        "BUILD_VER": "100.4",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.19",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    },
+    {
+        "SGX_SDK_VER": "2.18",
+        "BUILD_VER": "100.3",
+        "OS_CODE_NAME": "jammy",
+        "OS_VER": "22.04"
+    }
+]
