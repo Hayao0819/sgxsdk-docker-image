@@ -1,0 +1,25 @@
+services:
+  aesmd:
+    image: ghcr.io/hayao0819/sgxsdk-docker-image:noble-latest
+    container_name: aesmd
+    environment:
+      - LD_LIBRARY_PATH=/opt/intel/sgx-aesm-service/aesm
+    command: ["/opt/intel/sgx-aesm-service/aesm/aesm_service", "--no-daemon"]
+    volumes:
+      - aesmd-socket:/var/run/aesmd
+
+  hellosgx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hellosgx
+    devices:
+      - /dev/isgx
+    depends_on:
+      - aesmd
+    volumes:
+      - aesmd-socket:/var/run/aesmd
+
+volumes:
+  aesmd-socket:
+
