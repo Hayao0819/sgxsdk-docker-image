@@ -5,6 +5,8 @@ services:
     environment:
       - LD_LIBRARY_PATH=/opt/intel/sgx-aesm-service/aesm
     command: ["/opt/intel/sgx-aesm-service/aesm/aesm_service", "--no-daemon"]
+    devices:
+      - /dev/sgx_enclave
     volumes:
       - aesmd-socket:/var/run/aesmd
 
@@ -12,6 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      network: host
     container_name: hellosgx
     devices:
       - /dev/sgx_enclave
