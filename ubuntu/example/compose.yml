@@ -13,6 +13,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: hellosgx
+    devices:
+      - /dev/sgx_enclave
     depends_on:
       - aesmd
     volumes:
