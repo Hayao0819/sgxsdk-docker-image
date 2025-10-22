@@ -12,4 +12,4 @@ EOF
 WORKDIR /root/helloSGX
 RUN make
 
-ENTRYPOINT [ "./helloSGX/app" ]
+ENTRYPOINT [ "/root/helloSGX/app" ]

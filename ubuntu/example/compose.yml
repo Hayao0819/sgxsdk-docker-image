@@ -4,12 +4,14 @@ services:
     container_name: aesmd
     environment:
       - LD_LIBRARY_PATH=/opt/intel/sgx-aesm-service/aesm
-    command: ["/opt/intel/sgx-aesm-service/aesm/aesm_service"]
+    command: ["/opt/intel/sgx-aesm-service/aesm/aesm_service", "--no-daemon"]
     volumes:
       - aesmd-socket:/var/run/aesmd
-  
+
   hellosgx:
-    image: ./Dodkerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: hellosgx
     depends_on:
       - aesmd
@@ -18,4 +20,4 @@ services:
 
 volumes:
   aesmd-socket:
-    external: true
+
